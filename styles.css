@@ -62,11 +62,11 @@ body {
     cursor: pointer;
 }
 
-/* Hero Section con nuovo sfondo */
+/* Hero Section */
 .hero {
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
-                      url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0');
+                      url('https://images.unsplash.com/photo-1519070994522-88c6b756330e');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -94,23 +94,15 @@ body {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
-/* Sezioni principali con nuovi sfondi */
-
-#ristorante, #bb, #dove-siamo, #contatti, #eventi {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
+/* Sezioni Base */
 .section {
     padding: 8rem 2rem;  
     margin: 4rem auto;  
+    max-width: 1200px;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    max-width: 1200px; 
     transition: transform 0.3s ease;
-    
 }
 
 .section:hover {
@@ -124,43 +116,12 @@ body {
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
 }
 
-
-
 .section p {
     font-size: 1.2rem;
     line-height: 1.8;
     text-align: justify;
     margin-bottom: 1.5rem;
     color: #2c1810;
-}
-
-
-
-#ristorante {
-      background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
-                url('https://images.unsplash.com/photo-1542834291-c514e77b215f');
- 
-}
-
-#bb {
-  background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
-                url('https://images.unsplash.com/photo-1618221469555-7f3ad97540d6');
-}
-
-#contatti {
-    background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
-                url('https://images.unsplash.com/photo-1464638681273-0962e9b53566');
-}
-
-#dove-siamo {
-    background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
-                url('https://images.unsplash.com/photo-1499002238440-d264edd596ec');
-}
-
-
-#eventi {
-    background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
-                url('https://images.unsplash.com/photo-1519225421980-715cb0215aed');
 }
 
 .section-title {
@@ -171,7 +132,48 @@ body {
     text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
-/* Sezioni aggiuntive */
+/* Sfondi Sezioni */
+#ristorante {
+    background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+                url('https://images.unsplash.com/photo-1542834291-c514e77b215f');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#bb {
+    background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+                url('https://images.unsplash.com/photo-1618221469555-7f3ad97540d6');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#dove-siamo {
+    background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+                url('https://images.unsplash.com/photo-1499002238440-d264edd596ec');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#contatti {
+    background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+                url('https://images.unsplash.com/photo-1464638681273-0962e9b53566');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#eventi {
+    background: linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+                url('https://images.unsplash.com/photo-1519225421980-715cb0215aed');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* Sezione Contatti */
 .contact-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -187,25 +189,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-}
-
-.contact-info {
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.contact-info h3 {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-}
-
-.contact-info p {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    line-height: 1.8;
 }
 
 .contact-form input,
@@ -228,7 +211,7 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
+    transition: all 0.3s ease;
     font-size: 1.1rem;
 }
 
@@ -237,6 +220,7 @@ body {
     transform: translateY(-2px);
 }
 
+/* Sezione Eventi */
 .events-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -251,13 +235,10 @@ body {
     text-align: center;
     transition: transform 0.3s;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    border: 1px solid rgba(0,0,0,0.1);
 }
 
-.event-card p {
-    color: var(--text-color);
-    font-size: 1.1rem;
-    line-height: 1.6;
+.event-card:hover {
+    transform: translateY(-5px);
 }
 
 .event-card h3 {
@@ -266,15 +247,12 @@ body {
     margin-bottom: 1rem;
 }
 
-
-.event-card:hover {
-    transform: translateY(-5px);
+.event-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
-
-
-
-
+/* Sezione Mappa */
 .map-container {
     height: 450px;
     margin: 3rem 0;
@@ -299,16 +277,6 @@ body {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-#ristorante .section-content,
-#bb .section-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
 }
 
 /* Responsive Design */
@@ -336,19 +304,61 @@ body {
         font-size: 2rem;
     }
 
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
     .section {
         margin: 2rem auto;
         padding: 4rem 1rem;
     }
-    
+
     .section-content {
         padding: 2rem 1rem;
     }
-    
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
     .event-card {
         padding: 2rem 1rem;
+        .hero p {
+        font-size: 1.1rem;
+    }
+       
+    .section-content {
+        padding: 2rem 1rem;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+
+    .map-container {
+        height: 300px;
+    }
+
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
     }
 }
