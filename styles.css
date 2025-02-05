@@ -95,6 +95,13 @@ body {
 }
 
 /* Sezioni principali con nuovi sfondi */
+
+#ristorante, #bb, #dove-siamo, #contatti, #eventi {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 .section {
     padding: 8rem 2rem;  
     margin: 4rem auto;  
@@ -130,35 +137,30 @@ body {
 
 
 #ristorante {
-    background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+      background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
                 url('https://images.unsplash.com/photo-1542834291-c514e77b215f');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+ 
 }
 
 #bb {
-    background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+  background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
                 url('https://images.unsplash.com/photo-1618221469555-7f3ad97540d6');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
 #contatti {
-    background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+    background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
                 url('https://images.unsplash.com/photo-1464638681273-0962e9b53566');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
 }
 
+#dove-siamo {
+    background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
+                url('https://images.unsplash.com/photo-1499002238440-d264edd596ec');
+}
+
+
 #eventi {
-    background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
-                url('https://images.unsplash.com/photo-1571824157947-8e37d9a8d926');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    background: linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.80)),
+                url('https://images.unsplash.com/photo-1519225421980-715cb0215aed');
 }
 
 .section-title {
@@ -269,13 +271,8 @@ body {
     transform: translateY(-5px);
 }
 
-#dove-siamo {
-    background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
-                url('https://images.unsplash.com/photo-1499002238440-d264edd596ec');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
+
+
 
 
 .map-container {
