@@ -130,9 +130,17 @@ body {
     background-position: center;
 }
 
+#contatti {
+    background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
+                url('https://images.unsplash.com/photo-1464638681273-0962e9b53566');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
 #eventi {
     background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
-                url('https://images.unsplash.com/photo-1545134969-04919c3be421');
+                url('https://images.unsplash.com/photo-1571824157947-8e37d9a8d926');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -215,11 +223,12 @@ body {
 
 #dove-siamo {
     background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)),
-                url('https://images.unsplash.com/photo-1515694346937-94d85e41e6f0');
+                url('https://images.unsplash.com/photo-1499002238440-d264edd596ec');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
+
 
 .map-container {
     height: 450px;
