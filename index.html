@@ -1,107 +1,447 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antico Stradello 1810 - Ristorante & Pizzeria</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header class="header">
+        <div class="header-top-stripe"></div>
         <nav class="nav-container">
-            <div class="logo">Antico Stradello 1810</div>
+            <div class="logo">
+                <span class="logo-text">Antico Stradello <span class="accent">1810</span></span>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#" class="nav-link">Home</a></li>
                 <li><a href="#ristorante" class="nav-link">Ristorante</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
                 <li><a href="#bb" class="nav-link">B&B</a></li>
                 <li><a href="#dove-siamo" class="nav-link">Dove Siamo</a></li>
                 <li><a href="#contatti" class="nav-link">Contatti</a></li>
                 <li><a href="#eventi" class="nav-link">Eventi</a></li>
             </ul>
-            <div class="hamburger">☰</div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="hero">
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Antico Stradello 1810</h1>
-                <p>Un locale caldo ed accogliente sull'appennino bolognese, dove tradizione e comfort si incontrano.</p>
+                <div class="hero-badge">Dal 1810</div>
+                <h1>Antico Stradello</h1>
+                <div class="hero-divider">
+                    <span class="divider-icon"><i class="fas fa-pizza-slice"></i></span>
+                </div>
+                <p>Tradizione, Passione e Sapori Autentici dell'Appennino Bolognese</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary">Scopri il Menu</a>
+                    <a href="#contatti" class="btn btn-secondary">Prenota Ora</a>
+                </div>
             </div>
         </section>
 
-    <section id="ristorante" class="section">
-        <h2 class="section-title">Il Nostro Ristorante</h2>
-        <div class="section-content">
-            <p>I graditi ospiti dell'Antico Stradello 1810 hanno la possibilità di poter gustare, in un ambiente sobrio e raffinato, sapori particolari, con una cucina fantasiosa. Le materie prime vengono reperite nelle numerose aziende agricole della zona ed il menù, a discrezione della fantasia dello chef, varia di giorno in giorno.</p>
-            <p>La nostra cucina unisce tradizione e innovazione, con piatti che raccontano la storia del territorio attraverso ingredienti selezionati e tecniche di preparazione che rispettano le antiche tradizioni. Il nostro forno a legna, elemento centrale della cucina, conferisce ai piatti quei sapori autentici che solo la cottura tradizionale sa donare.</p>
-        </div>
-    </section>
-
-    <section id="bb" class="section">
-        <h2 class="section-title">B&B</h2>
-        <div class="section-content">
-            <p>Scoprite il comfort e il relax del nostro B&B, dove tradizione e modernità si fondono per offrirvi un soggiorno indimenticabile sull'appennino bolognese. Ogni camera è stata accuratamente arredata per garantire il massimo comfort, mantenendo l'atmosfera calda e accogliente tipica delle antiche locande.</p>
-            <p>Le nostre camere, tutte dotate di servizi privati e moderne comodità, mantengono il fascino rustico con travi a vista e arredi in legno massello. La colazione, servita nella sala principale, è un viaggio tra i sapori del territorio, con prodotti freschi e genuini.</p>
-        </div>
-    </section>
-
-    <section id="dove-siamo" class="section">
-        <h2 class="section-title">Dove Siamo</h2>
-        <div class="section-content">
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=..." 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+        <section id="ristorante" class="section">
+            <div class="decorative-element left-top"><i class="fas fa-utensils"></i></div>
+            <h2 class="section-title">Il Nostro Ristorante</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon"><i class="fas fa-star"></i></span>
+                <span class="divider-line"></span>
             </div>
-            <div class="address-info">
-                <p>Via dello Stradello, 1810</p>
-                <p>Bologna, Italia</p>
-                <p>Immerso nel verde dell'appennino bolognese, il nostro locale è facilmente raggiungibile sia in auto che con i mezzi pubblici.</p>
+            <div class="section-content">
+                <div class="two-column-grid">
+                    <div class="text-column">
+                        <p class="highlight-text">Un'esperienza culinaria autentica nel cuore dell'appennino bolognese.</p>
+                        <p>I graditi ospiti dell'Antico Stradello 1810 hanno la possibilità di poter gustare, in un ambiente sobrio e raffinato, sapori particolari, con una cucina fantasiosa. Le materie prime vengono reperite nelle numerose aziende agricole della zona ed il menù, a discrezione della fantasia dello chef, varia di giorno in giorno.</p>
+                        <p>La nostra cucina unisce tradizione e innovazione, con piatti che raccontano la storia del territorio attraverso ingredienti selezionati e tecniche di preparazione che rispettano le antiche tradizioni. Il nostro forno a legna, elemento centrale della cucina, conferisce ai piatti quei sapori autentici che solo la cottura tradizionale sa donare.</p>
+                        <div class="feature-badges">
+                            <div class="badge"><i class="fas fa-leaf"></i> Ingredienti Locali</div>
+                            <div class="badge"><i class="fas fa-fire"></i> Forno a Legna</div>
+                            <div class="badge"><i class="fas fa-wine-glass-alt"></i> Cantina Selezionata</div>
+                        </div>
+                    </div>
+                    <div class="image-column">
+                        <div class="image-frame">
+                            <img src="./images/a.png" alt="Il nostro ristorante" class="section-image">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+            <div class="decorative-element right-bottom"><i class="fas fa-wine-bottle"></i></div>
+        </section>
+
+        <section id="menu" class="section menu-section">
+            <div class="decorative-element right-top"><i class="fas fa-pizza-slice"></i></div>
+            <h2 class="section-title">Il Nostro Menu</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon"><i class="fas fa-utensils"></i></span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="section-content">
+                <div class="menu-tabs">
+                    <button class="menu-tab active" data-tab="pizze">Le Nostre Pizze</button>
+                    <button class="menu-tab" data-tab="primi">Primi Piatti</button>
+                    <button class="menu-tab" data-tab="secondi">Secondi Piatti</button>
+                    <button class="menu-tab" data-tab="dolci">Dolci</button>
+                </div>
+                
+                <div class="menu-content active" id="pizze-content">
+                    <div class="menu-category">
+                        <h3 class="menu-category-title">Pizze Classiche</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Margherita</h4>
+                                    <span class="menu-item-price">€8.00</span>
+                                </div>
+                                <p class="menu-item-description">Pomodoro San Marzano, mozzarella fior di latte, basilico fresco, olio EVO</p>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Capricciosa</h4>
+                                    <span class="menu-item-price">€11.50</span>
+                                </div>
+                                <p class="menu-item-description">Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive nere, origano</p>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Diavola</h4>
+                                    <span class="menu-item-price">€10.00</span>
+                                </div>
+                                <p class="menu-item-description">Pomodoro, mozzarella, salame piccante, peperoncino, olio EVO</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="menu-category">
+                        <h3 class="menu-category-title">Pizze Speciali</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Antico Stradello</h4>
+                                    <span class="menu-item-price">€14.00</span>
+                                </div>
+                                <p class="menu-item-description">Base bianca, mozzarella di bufala, funghi porcini, prosciutto crudo di Parma 24 mesi, scaglie di Parmigiano Reggiano</p>
+                                <span class="menu-item-tag">Specialità della Casa</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Rustica</h4>
+                                    <span class="menu-item-price">€12.50</span>
+                                </div>
+                                <p class="menu-item-description">Pomodoro, mozzarella, salsiccia, patate al rosmarino, cipolla caramellata</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content" id="primi-content">
+                    <div class="menu-category">
+                        <h3 class="menu-category-title">Primi della Tradizione</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Tagliatelle al Ragù Bolognese</h4>
+                                    <span class="menu-item-price">€12.00</span>
+                                </div>
+                                <p class="menu-item-description">Tagliatelle fatte in casa, ragù tradizionale bolognese a lenta cottura</p>
+                                <span class="menu-item-tag">Tradizionale</span>
+                            </div>
+                            
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Tortellini in Brodo</h4>
+                                    <span class="menu-item-price">€14.00</span>
+                                </div>
+                                <p class="menu-item-description">Tortellini fatti a mano ripieni di carne, serviti in brodo di cappone</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content" id="secondi-content">
+                    <!-- Contenuto per secondi piatti -->
+                    <div class="menu-category">
+                        <h3 class="menu-category-title">Secondi di Carne</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Tagliata di Manzo</h4>
+                                    <span class="menu-item-price">€18.00</span>
+                                </div>
+                                <p class="menu-item-description">Controfiletto di manzo con rucola e scaglie di Parmigiano</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="menu-content" id="dolci-content">
+                    <!-- Contenuto per dolci -->
+                    <div class="menu-category">
+                        <h3 class="menu-category-title">Dolci della Casa</h3>
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-header">
+                                    <h4 class="menu-item-title">Tiramisù</h4>
+                                    <span class="menu-item-price">€6.00</span>
+                                </div>
+                                <p class="menu-item-description">Classico tiramisù fatto in casa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bb" class="section">
+            <div class="decorative-element left-bottom"><i class="fas fa-bed"></i></div>
+            <h2 class="section-title">B&B - Il Nostro Rifugio</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon"><i class="fas fa-home"></i></span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="section-content">
+                <div class="two-column-grid reverse">
+                    <div class="image-column">
+                        <div class="image-frame">
+                            <img src="./images/a.png" alt="Il nostro B&B" class="section-image">
+                        </div>
+                    </div>
+                    <div class="text-column">
+                        <p class="highlight-text">Comfort e relax immersi nella natura dell'appennino bolognese.</p>
+                        <p>Scoprite il comfort e il relax del nostro B&B, dove tradizione e modernità si fondono per offrirvi un soggiorno indimenticabile. Ogni camera è stata accuratamente arredata per garantire il massimo comfort, mantenendo l'atmosfera calda e accogliente tipica delle antiche locande.</p>
+                        <p>Le nostre camere, tutte dotate di servizi privati e moderne comodità, mantengono il fascino rustico con travi a vista e arredi in legno massello. La colazione, servita nella sala principale, è un viaggio tra i sapori del territorio, con prodotti freschi e genuini.</p>
+                        <div class="feature-badges">
+                            <div class="badge"><i class="fas fa-wifi"></i> Wi-Fi Gratuito</div>
+                            <div class="badge"><i class="fas fa-parking"></i> Parcheggio Privato</div>
+                            <div class="badge"><i class="fas fa-coffee"></i> Colazione Inclusa</div>
+                        </div>
+                        <a href="#contatti" class="btn btn-primary">Prenota Ora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="dove-siamo" class="section">
+            <h2 class="section-title">Dove Siamo</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon"><i class="fas fa-map-marker-alt"></i></span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="section-content">
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=..." 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="address-info">
+                    <div class="address-card">
+                        <div class="address-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="address-details">
+                            <h3>Ci trovi qui</h3>
+                            <p><strong>Via dello Stradello, 1810</strong></p>
+                            <p>Bologna, Italia</p>
+                            <p>Immerso nel verde dell'appennino bolognese, il nostro locale è facilmente raggiungibile sia in auto che con i mezzi pubblici.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section id="contatti" class="section">
-            <h2 class="section-title">Contatti</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Informazioni</h3>
-                    <p>📞 Tel: +39 xxx xxx xxxx</p>
-                    <p>📧 Email: info@anticostradello.it</p>
-                    <p>⏰ Orari:</p>
-                    <p>Mar-Dom: 12:00-15:00, 19:00-23:00</p>
-                    <p>Lunedì: Chiuso</p>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Nome" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Messaggio" required></textarea>
-                    <button type="submit">Invia</button>
-                </form>
+            <div class="decorative-element right-top"><i class="fas fa-envelope"></i></div>
+            <h2 class="section-title">Contattaci</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon"><i class="fas fa-phone"></i></span>
+                <span class="divider-line"></span>
             </div>
+            <div class="section-content">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Orari di Apertura</h3>
+                                <p><strong>Martedì - Domenica:</strong><br>12:00-15:00, 19:00-23:00</p>
+                                <p><strong>Lunedì:</strong> Chiuso</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Chiamaci</h3>
+                                <p><strong>Tel:</strong> +39 xxx xxx xxxx</p>
+                                <p><strong>Email:</strong> info@anticostradello.it</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Seguici</h3>
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <h3>Invia un messaggio</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nome e Cognome *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <select>
+                                <option value="" disabled selected>Seleziona motivo *</option>
+                                <option value="prenotazione">Prenotazione Tavolo</option>
+                                <option value="bb">Prenotazione B&B</option>
+                                <option value="eventi">Eventi e Cerimonie</option>
+                                <option value="info">Informazioni Generali</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Il tuo messaggio *" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+            <div class="decorative-element left-bottom"><i class="fas fa-comment"></i></div>
         </section>
 
         <section id="eventi" class="section">
-            <h2 class="section-title">Eventi</h2>
-            <div class="events-container">
-                <div class="event-card">
-                    <h3>Serate a Tema</h3>
-                    <p>Scopri i nostri eventi speciali e le serate tematiche</p>
-                </div>
-                <div class="event-card">
-                    <h3>Cerimonie</h3>
-                    <p>Location perfetta per i tuoi eventi speciali</p>
+            <h2 class="section-title">Eventi & Cerimonie</h2>
+            <div class="section-divider">
+                <span class="divider-line"></span>
+                <span class="divider-icon"><i class="fas fa-glass-cheers"></i></span>
+                <span class="divider-line"></span>
+            </div>
+            <div class="section-content">
+                <div class="events-container">
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h3>Serate a Tema</h3>
+                        <p>Scopri i nostri eventi speciali e le serate tematiche dedicate alla cucina regionale e alle degustazioni di vini locali.</p>
+                        <a href="#contatti" class="btn btn-outline">Informazioni</a>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h3>Compleanni</h3>
+                        <p>Festeggia il tuo compleanno in un'atmosfera unica e accogliente con menu personalizzati e spazi dedicati.</p>
+                        <a href="#contatti" class="btn btn-outline">Prenota</a>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-ring"></i>
+                        </div>
+                        <h3>Cerimonie</h3>
+                        <p>Location perfetta per matrimoni, battesimi e ogni occasione speciale, con allestimenti personalizzati e menu su misura.</p>
+                        <a href="#contatti" class="btn btn-outline">Contattaci</a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="/api/placeholder/120/60" alt="Logo Antico Stradello 1810" class="footer-logo-img">
+                    <span class="footer-logo-text">Antico Stradello <span class="accent">1810</span></span>
+                </div>
+                <p>Tradizione e innovazione nel cuore dell'appennino bolognese dal 1810.</p>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contatti</h4>
+                <ul class="footer-contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> Via dello Stradello, 1810, Bologna</li>
+                    <li><i class="fas fa-phone"></i> +39 xxx xxx xxxx</li>
+                    <li><i class="fas fa-envelope"></i> info@anticostradello.it</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Orari</h4>
+                <ul class="footer-hours-list">
+                    <li><span>Martedì - Venerdì:</span> 12:00-15:00, 19:00-23:00</li>
+                    <li><span>Sabato - Domenica:</span> 12:00-15:30, 18:30-23:30</li>
+                    <li><span>Lunedì:</span> Chiuso</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Newsletter</h4>
+                <p>Iscriviti per ricevere le nostre offerte e novità</p>
+                <form class="footer-newsletter">
+                    <input type="email" placeholder="La tua email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Antico Stradello 1810 - Tutti i diritti riservati</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
